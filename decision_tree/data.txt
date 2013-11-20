@@ -1,0 +1,21 @@
+@attribute 3 sunny overcast rainy 
+@attribute 3 hot mild cool 
+@attribute 2 high normal 
+@attribute 2 TRUE FALSE
+@class 2 yes no
+
+@data 14
+sunny hot high FALSE no
+sunny hot high TRUE no
+overcast hot high FALSE yes
+rainy mild high FALSE yes
+rainy cool normal FALSE yes
+rainy cool normal TRUE no
+overcast cool normal TRUE yes
+sunny mild high FALSE no
+sunny cool normal FALSE yes
+rainy mild normal FALSE yes
+sunny mild normal TRUE yes
+overcast mild high TRUE yes
+overcast hot normal FALSE yes
+rainy mild high TRUE no
