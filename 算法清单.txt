@@ -1,3 +1,0 @@
-GA_TSP : 用遗传算法解决旅行商问题
-decision_tree: C4.5决策树（只处理离散属性）
-adaBoost (python语言)
