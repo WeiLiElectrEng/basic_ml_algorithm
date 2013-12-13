@@ -165,12 +165,12 @@ void SMO::train(){
 	int num_changed;		//没有直接用num_violate_KKT，因为有可能虽然违反了KKT，但是违反程度很小，a1 a2的变化非常细微。
 	while(true){
 		num_changed = 0;
-		for(int i=0;i<N;++i){
-			if((alpha[i]==0 || alpha[i]==C) && loop_on_bounds) continue;	//只在边界上面寻找a
-			if(!satisfy_KKT(i)){
-				int x2 = select_alpha2(i);
+		for(int x1=0;x1<N;++x1){
+			if((alpha[x1]==0 || alpha[x1]==C) && loop_on_bounds) continue;	//只在边界上面寻找a
+			if(!satisfy_KKT(x1)){
+				int x2 = select_alpha2(x1);
 				if(x2==-1) continue;
-				num_changed+=update(i,x2);
+				num_changed+=update(x1,x2);
 			}
 		}
 		if(!loop_on_bounds && num_changed==0) break;	//在整个数据集上都找不到违反KKT条件的a，结束算法
