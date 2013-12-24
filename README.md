@@ -17,3 +17,5 @@ SVM&SMO  SMO算法实现  (c++)
 adaBoost (python)
 
 regression 最小二乘回归、局部加权回归、岭回归、前向逐步回归 (python)
+
+apriori算法 (python)
