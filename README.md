@@ -19,3 +19,5 @@ adaBoost (python)
 regression 最小二乘回归、局部加权回归、岭回归、前向逐步回归 (python)
 
 apriori算法 (python)
+
+FP增长树算法 (python)
